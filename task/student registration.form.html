@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 
-<body style="background-color: rgb(214, 167, 224);">
+<body style="background-color: rgb(118, 212, 236);">
     <table align="center">
         <caption>
             <h3><u>Student Registration Form Using Table in HTML</u></h3>
@@ -23,11 +23,11 @@
             </tr>
             <tr>
                 <td>Email ID</td>
-                <td><input type="text" placeholder="yghanendra@gmail.com"></td>
+                <td><input type="text" placeholder="yghanendra@gmail.com" required pattern="[a-z][0-9+@+[a-z]+.+[a-z]{2-3}$"></td>
             </tr>
             <tr>
                 <td>Mobile Number</td>
-                <td><input type="text" placeholder="7842xxxxxx">(10 Digits Allowed)</td>
+                <td><input type="text" placeholder="7842xxxxxx" required pattern="[6789][0-9]{9}" maxlength="10">(10 Digits Allowed)</td>
             </tr>
             <tr>
                 <td>Gender</td>
@@ -56,7 +56,7 @@
             </tr>
             <tr>
                 <td>Pin Code</td>
-                <td><input type="text" placeholder="560088">(Max 6 Numbers Allowed)</td>
+                <td><input type="text" placeholder="560088" required pattern="[0-9]{9}" maxlength="6">(Max 6 Numbers Allowed)</td>
             </tr>
             <tr>
                 <td>State</td>

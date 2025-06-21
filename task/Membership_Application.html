@@ -13,8 +13,8 @@
         <hr>
         <tr>
             <td>Name</td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
+            <td><input type="text" required pattern="[A-Za-z]{3,8}"></td>
+            <td><input type="text" required pattern="[A-Za-z]{3,8}"></td>
         </tr>
           <tr>
             <td></td>
@@ -23,7 +23,7 @@
           </tr>
           <tr>
             <td>Address</td>
-            <td><textarea name="" id=""></textarea></td>
+            <td><textarea name="" id="" required></textarea></td>
           </tr>
           <tr>
             <td></td>
@@ -31,17 +31,27 @@
           </tr>
           <tr>
             <td></td>
-            <td><textarea name="" id=""></textarea></td>
+            <td><textarea name="" id="" required></textarea></td>
           </tr>
           <tr>
             <td></td>
             <td>Street Address Line 2</td>
           </tr>
-          <tr>
+            <tr>
+              <td></td>
+              <td><input type="text"></td>
+              <td><input type="text"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>City</td>
+              <td>State/Province</td>
+            </tr>
             <td></td>
-            <td><input type="text"></td>
+            <td><input type="text" required></td>
             <td>
                 <select name="" id="">
+                    <option value=""hidden>Please Select</option>
                     <option value="">USA</option>
                     <option value="">UK</option>
                     <option value="">INDIA</option>
@@ -58,12 +68,12 @@
           </tr>
           <tr>
             <td>E-mail</td>
-            <td><input type="text" placeholder="ex:myname@example.com"></td>
+            <td><input type="text" placeholder="ex:myname@example.com" required pattern="[a-z][0-9+@+[a-z]+.+[a-z]{2-3}$"></td>
           </tr>
           <tr>
             <td>Home Number</td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
+            <td><input type="text" required pattern="[A-Za-z]{3,8}"></td>
+            <td><input type="text" required pattern="[A-Za-z]{3,8}"></td>
           </tr>
           <tr>
             <td></td>
@@ -72,8 +82,8 @@
           </tr>
           <tr>
             <td>Cellular Number</td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
+            <td><input type="text" required pattern="[A-Za-z]{3,8}"></td>
+            <td><input type="text" required pattern="[A-Za-z]{3,8}"></td>
           </tr>
           <tr>
             <td></td>
@@ -82,8 +92,8 @@
           </tr>
           <tr>
             <td>Work Number</td>
-            <td><input type="text"></td>
-             <td><input type="text"></td>
+            <td><input type="text" required pattern="[A-Za-z]{3,8}"></td>
+             <td><input type="text" required pattern="[A-Za-z]{3,8}"></td>
           </tr>
           <tr>
             <td></td>
