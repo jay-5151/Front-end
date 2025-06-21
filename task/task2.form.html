@@ -12,16 +12,16 @@
         <caption>Sign Up</caption>
         <form action="">
             <tr>
-                <td>First, Last Name*:</td>
-                <td><input type="text"><input type="text"></td>
+                <td>First, Last Name <span style="color: red;">*</span>:</td>
+                <td><input type="text"><input type="text" required pattern="[A-Za-z]{3,8}"></td>
             </tr>
             <tr>
                 <td>Organizition</td>
                 <td><input type="text"></td>
             </tr>
             <tr>
-                <td>Email address*:</td>
-                <td><input type="text"></td>
+                <td>Email address: <span style="color: red;">*</span></td>
+                <td><input type="text" required pattern="[a-z][0-9+@+[a-z]+.+[a-z]{2-3}$"></td>
             </tr>
             <tr>
                 <td>Work Phone:</td>
@@ -40,16 +40,16 @@
                 <td><input type="text"></td>
             </tr>
             <tr>
-                <td>Address 1*:</td>
+                <td>Address 1<span style="color: red;">*</span>:</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Address 2:<span style="color: red;"></span></td>
                 <td><input type="text"></td>
             </tr>
             <tr>
-                <td>Address 2*</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>City</td>
-                <td><input type="text"></td>
+                <td>City <span style="color: red;">*</span>:</td>
+                <td><input type="text" required></td>
             </tr>
             <tr>
                 <td>State presence:</td>
@@ -60,11 +60,11 @@
                 <td><input type="text"></td>
             </tr>
             <tr>
-                <td>Country*:</td>
-                <td><input type="text"></td>
+                <td>Country <span style="color: red;">*</span>:</td>
+                <td><input type="text" required></td>
             </tr>
             <tr>
-                <td>*-regured fields</td>
+                <td> <span style="color: red;">*</span>-regured fields</td>
                 <td><input type="submit"></td>
             </tr>
             <tr>
