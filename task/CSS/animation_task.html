@@ -1,25 +1,58 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .main{
+        .main {
             height: 200px;
-            width: 200px;
-            border: 2px solid;
-            transform: skewX(10deg);
-            /* transform: skewY(20deg); */
-            /* transform: skew(20deg,20deg); */
+            width: 350px;
+            border: 5px solid rgba(0,0,0,0.5);
+            /* margin: 100px auto; */
+            overflow: hidden;
+           
         }
+
+        .left {
+            height: 200px;
+            width: 350px;
+            border: 3px solid;
+          background: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+            transform: translateX(-10px);
+            transition: 1s;
+            
+            
+        } 
+        .right{
+            height: 100px;
+            width: 250px;
+            border: 5px solid white;
+            color: white;
+            margin: 50px;
+           transform: translate(-10px);
+           transition: 1s;
+          
+        }
+
+        .left:hover {
+            transform: translate(0px);
+        }
+     
+      .left:hover .right{
+        transform: translate(0px);
+      }
     </style>
 </head>
+
 <body>
     <div class="main">
-        text
+        <div class="left"></div>
+        <div class="right"></div>
     </div>
-    <h1>Hello this tag</h1>
 </body>
+
 </html>

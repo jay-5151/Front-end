@@ -7,3 +7,58 @@ h6{
 p{
     background-color: brown;
 }
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 200px;
+            width: 380px;
+            margin: 100px auto;
+            position: relative;
+            border: 2px solid lightcoral;
+            overflow: hidden;
+        }
+        .first {
+            position: absolute;
+            width: 400px;
+            height: 200px;
+            right: 0;
+
+        }
+
+        .main:hover .first{
+            left: 0;
+        }
+
+        .first img{
+            width: 400px;
+        }
+
+        .second {
+            position: absolute;
+            width: 350px;
+            height: 160px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="first">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg"
+                alt="">
+        </div>
+        <div class="second">
+            <h1>jay</h1>
+            <h2>guru</h2>
+        </div>
+    </div>
+</body>
+
+</html>
