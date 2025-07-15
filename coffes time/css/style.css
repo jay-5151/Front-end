@@ -1,0 +1,17 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* resuse */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+#header {
+    background:  rgb(34, 40, 49);
+    position: relative;
+    
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main .jay{
+            display: inline-block;
+            background-color: lightcoral;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        .list{
+            position: absolute;
+            background-color: red;
+            top: 100%;
+            padding: 0;
+            left: 0;
+            display: none;
+        }
+
+        .list li{
+            padding: 10px;
+            border: 2px solid;
+            list-style: none;
+        }
+
+        .jay:hover .list{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="main">
+        <li class="jay">home
+
+            <ul class="list">
+                <li>home</li>
+                <li>watch</li>
+                <li>phone</li>
+                <li>earbuds</li>
+            </ul>
+        </li>
+        <li class="jay">About
+            <ul class="list">
+                <li>about us</li>
+                <li>more options</li>
+                <li>many product</li>
+            </ul>
+        </li>
+        <li class="jay">content
+            <ul class="list">
+                <li>mumbai</li>
+                <li>surat</li>
+                <li>rajkot</li>
+                <li>nadiad</li>
+            </ul>
+        </li>
+        <li class="jay">help
+            <ul class="list">
+                <li>cricket</li>
+                <li>basketball</li>
+                <li>football</li>
+                <li>time india</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

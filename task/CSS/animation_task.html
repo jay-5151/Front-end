@@ -7,51 +7,56 @@
     <title>Document</title>
     <style>
         .main {
-            height: 200px;
-            width: 350px;
-            border: 5px solid rgba(0,0,0,0.5);
-            /* margin: 100px auto; */
+            height: 400px;
+            width: 500px;
             overflow: hidden;
-           
+            margin: auto;
         }
 
-        .left {
-            height: 200px;
-            width: 350px;
-            border: 3px solid;
-          background: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg);
-          background-size: 100% 100%;
-          background-repeat: no-repeat;
-            transform: translateX(-10px);
+        .img {
+            height: 400px;
+            width: 500px;
+            border: 5px solid black;
+            background: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transform: translate(-10px);
             transition: 1s;
-            
-            
-        } 
-        .right{
-            height: 100px;
-            width: 250px;
-            border: 5px solid white;
-            color: white;
-            margin: 50px;
-           transform: translate(-10px);
-           transition: 1s;
-          
+         
         }
 
-        .left:hover {
-            transform: translate(0px);
+        .border {
+            height: 300px;
+            width: 400px;
+            border: 5px solid white;
+            margin: 50px auto;
+            transform: translate(-10px);
+            transition: 1s;
+            line-height: 500px;
+            text-align: right;
+            font-size: 30px;
+            color: white;
+            opacity: 0;
+         
         }
-     
-      .left:hover .right{
-        transform: translate(0px);
-      }
+
+        .img:hover {
+            transform: translate(0);
+        }
+
+        .img:hover .border {
+            transform: translate(-10px);
+            opacity: 1;
+        }
     </style>
 </head>
 
 <body>
     <div class="main">
-        <div class="left"></div>
-        <div class="right"></div>
+        <div class="img">
+            <div class="border"> NEW ARRIVELS</div>
+            <div class="src"></div>
+        </div>
     </div>
 </body>
 

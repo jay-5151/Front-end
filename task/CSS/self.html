@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 430px;
+            width: 300px;
+            border: 2px solid;
+            position: relative;
+        margin: 0 auto;
+        }
+
+        .text {
+            background-color: brown;
+            color: white;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 5PX 10PX;
+        }
+
+        .img {
+            height: 250px;
+            width: 200px;
+            /* border: 2px solid; */
+            background: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg);
+            background-size: 100% 100%;
+            margin: 30px 50px;
+            transition: 1s;
+            position: absolute;
+        }
+
+        .main:hover .img {
+            transform: rotateY(180deg);
+        }
+
+        .img2 {
+            height: 250px;
+            width: 200px;
+            /* border: 2px solid; */
+            background: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg);
+            background-size: 100% 100%;
+            margin: 30px 50px;
+            transition: 1s;
+            position: absolute;
+        }
+
+        .main:hover .img2 {
+            transform: rotateY(180deg);
+        }
+
+        .view {
+            background: rgb(0, 0, 0);
+            text-align: center;
+            color: white;
+            padding: 11px;
+            transform: translateY(0);
+            transition: 2s;
+            opacity: 0;
+
+        }
+
+        .main:hover .view {
+            transform: translateY(240px);
+            opacity: 1;
+            top: 10px;
+        }
+
+        .view:hover {
+            background-color: rgb(55, 217, 228);
+        }
+
+        .alfa a {
+            text-decoration: none;
+            position: absolute;
+            top: 290px;
+            right: 60px;
+            color: rgb(192, 31, 58);
+        }
+
+        .alfa p {
+            position: absolute;
+            top: 300px;
+            right: 90px;
+            word-spacing: 10PX;
+        }
+
+        .alfa button {
+            color: rgb(255, 255, 255);
+            background: rgb(55, 217, 228);
+            padding: 12px 20px;
+            position: absolute;
+            top: 349px;
+            right: 85px;
+           border: none;
+        }
+        .data{
+            height: 37px;
+            width: 125px;
+            border: 6px solid rgb(55, 217, 228) ;
+            position: absolute;
+            top: 345px;
+            right: 80px;
+            /* transform: scale(0); */
+            transition: 1s;
+        }
+        .alfa:hover .data{
+            transform:scale(1.5);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="text">New</div>
+        <div class="img"></div>
+        <div class="img2"></div>
+        <div class="view">QUICK VIEW</div>
+        <div class="alfa">
+            <a href="">Round Neck Black T-Shirt</a>
+            <p>$190.99 <del>$159.71</del></p>
+            <button>ADD TO CART</button>
+            <div class="data"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,64 +1,298 @@
-h3{
-    background-color: bisque;
-}
-h6{
-    background-color: blue;
-}
-p{
-    background-color: brown;
-}
-<!DOCTYPE html>
-<html lang="en">
+  * {
+      margin: 0px;
+  }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .main {
-            height: 200px;
-            width: 380px;
-            margin: 100px auto;
-            position: relative;
-            border: 2px solid lightcoral;
-            overflow: hidden;
-        }
-        .first {
-            position: absolute;
-            width: 400px;
-            height: 200px;
-            right: 0;
+  .nav {
+      width: 100%;
+      height: 650px;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/441963/pexels-photo-441963.jpeg?_gl=1*49eu8d*_ga*NDA2ODcxMDA4LjE3NTA3NTE1MzA.*_ga_8JE65Q40S6*czE3NTI1Njc5ODAkbzI4JGcxJHQxNzUyNTY4NTY2JGo1NSRsMCRoMA..);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: flex;
+  }
 
-        }
+  .left {
+      width: 20%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+  }
 
-        .main:hover .first{
-            left: 0;
-        }
+  .logo h1 {
+      text-align: center;
+      margin: 9px 0px;
+      /* border: 2px solid; */
+  }
 
-        .first img{
-            width: 400px;
-        }
+  .icon {
+      margin-top: 50%;
+      text-align: center;
 
-        .second {
-            position: absolute;
-            width: 350px;
-            height: 160px;
+  }
 
-        }
-    </style>
-</head>
+  .details p {
+      font-size: 18px;
+      text-align: center;
+      margin: 20px;
+      letter-spacing: 2px;
+      padding-top: 40px;
+  }
 
-<body>
-    <div class="main">
-        <div class="first">
-            <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg"
-                alt="">
-        </div>
-        <div class="second">
-            <h1>jay</h1>
-            <h2>guru</h2>
-        </div>
-    </div>
-</body>
+  .icon .fa-brands {
+      background-color: #ffffff;
+      color: rgb(19, 17, 117);
+      font-size: 20px;
+      padding: 8px;
+      margin: 0px 7px;
 
-</html>
+  }
+
+  .iteam {
+      margin: 0px;
+      padding-top: 20px;
+  }
+
+  ul {
+      text-align: center;
+      /* margin: 0%; */
+      padding: 0;
+      list-style: none;
+
+  }
+
+  ul li {
+
+      margin-top: 23px;
+      /* background-color: blue; */
+  }
+
+  ul li a {
+      text-decoration: none;
+      color: #ffffff;
+  }
+
+  .right {
+      width: 80%;
+  }
+
+  .box {
+      width: 350px;
+      /* height: 200px; */
+      transform: translate(100%, 90%);
+      margin-left: 250px;
+      margin-top: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 5px 15px;
+      border-radius: 5px;
+      box-shadow: 5px 4px 5px rgb(54, 41, 41);
+  }
+
+  .box h4 {
+      font-size: 24px;
+      margin: 10px 5px;
+  }
+
+  .box p {
+      margin: 10px 5px;
+  }
+
+  .section {
+      display: flex;
+  }
+
+  .left2 {
+      width: 20%;
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .right2 {
+      width: 80%;
+      display: flex;
+      background-color: rgb(255, 255, 255);
+      gap: 5px;
+  }
+
+  .box1 {
+      width: 35%;
+      padding: 20px 50px;
+  }
+
+  .box1 i {
+      font-size: 60px;
+      color: rgb(12, 0, 123);
+  }
+
+  .box1 h2 {
+      margin: 20px 0px;
+  }
+
+  .box1 p {
+      margin: 20px 0px;
+  }
+
+  .box2 {
+      width: 35%;
+      padding: 20px 50px;
+  }
+
+  .box2 i {
+      font-size: 60px;
+      color: rgb(12, 0, 123);
+  }
+
+  .box2 h2 {
+      margin: 20px 0px;
+  }
+
+  .box2 p {
+      margin: 20px 0px;
+  }
+
+  .team {
+      width: 100%;
+      display: flex;
+  }
+
+  .left3 {
+      /* height: 200px; */
+      width: 20%;
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .name {
+      width: 70%;
+      border: 1px solid;
+      padding: 25px 15px;
+      margin-left: 15px;
+  }
+
+  .name h1 {
+      margin-left: 90px;
+      font-size: 30px;
+      color: rgb(0, 0, 193);
+  }
+
+  .work {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      gap: 10px;
+      padding-bottom: 30px;
+
+  }
+
+  .img-item {
+      width: 20%;
+      margin-top: 15px;
+  }
+
+  img {
+      width: 100%;
+      height: 250px;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .member {
+      display: flex;
+  }
+
+  .info {
+      width: 70%;
+      padding: 10px 50px;
+  }
+
+  .info h1 {
+      font-size: 38px;
+      padding: 10px 0px;
+  }
+
+  .info p {
+      width: 80%;
+      margin: 10px 0px;
+      font-size: 18px;
+  }
+
+  .clients {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      width: 100%;
+      margin-top: 30px;
+      /* margin: 10px 0px; */
+  }
+
+  .cients-details {
+      width: 20%;
+      /* border: 2px solid; */
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 1px 2px 15px rgb(56, 48, 48);
+  }
+
+  .cients-details img {
+      width: 140px;
+      height: 100px;
+  }
+
+  .section-last {
+      display: flex;
+  }
+
+  .right4 {
+      display: flex;
+      width: 80%;
+      margin-top: 20px;
+  }
+
+  .boxa {
+      width: 40%;
+      /* padding: 10px 30px; */
+      padding-left: 40px;
+      padding-top: 10px;
+  }
+
+  .boxa h1 {
+      font-size: 30px;
+      margin-top: 35px;
+  }
+
+  .boxa p {
+      margin-top: 15px;
+  }
+
+  .boxb {
+      width: 40%;
+  }
+
+  .boxb form {
+      margin-top: 55px;
+  }
+
+  .form-item {
+      margin: 20px 100px;
+  }
+
+  .form-item input {
+      width: 80%;
+      border: none;
+      font-size: 17px;
+      padding: 5px 20px;
+      border-bottom: 2px solid;
+  }
+
+  .form-item textarea {
+      width: 60%;
+      border: none;
+      font-size: 17px;
+      padding: 5px 20px;
+      border-bottom: 2px solid;
+  }
+
+  .form-btn input {
+      padding: 10px 20px;
+      font-size: 10px;
+      margin-left: 65%;
+      border: none;
+      margin-bottom: 15px;
+  }
