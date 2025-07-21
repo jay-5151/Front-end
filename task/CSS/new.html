@@ -4,168 +4,346 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>coffee time</title>
+    <!-- <link rel="stylesheet" href="/task/CSS/#style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Grand+Hotel&family=Manufacturing+Consent&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Playwrite+VN:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Underdog&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        #header {
+            background: rgb(34, 40, 49);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .nav-list .nav-item {
+            display: inline-block;
+            padding: 0px 10px;
+            /* list-style: none; */
+        }
+
+        .nav-item .nav-a {
+            font-size: 25px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            letter-spacing: 1px;
+        }
+
+        .header-content {
+            color: #ffffff;
+            padding: 50px 0;
+        }
+
+        .header-content .header-h1 {
+            font-size: 153px;
+            letter-spacing: 6px;
+            /* line-height: 355px; */
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Grand Hotel";
+        }
+
+        .header-content .header-h3 {
+            font-size: 33px;
+            letter-spacing: 2px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            margin: 20px 0;
+        }
+
+        .header-content .header-p {
+            /* width: 1269px;
+            height: 167px; */
+            font-size: 15px;
+            letter-spacing: 1px;
+            /* line-height: 24px; */
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+            width: 40%;
+        }
+
+        .btn-header {
+            font-size: 33px;
+            background: rgb(41, 161, 156);
+            border-radius: 15px;
+            padding: 10px 30px;
+            border: none;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            margin: 20px;
+        }
+
+        #header::after {
+            content: url(/task/CSS/Image.png);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            overflow: hidden;
+        }
+
+        .icon .bar {
+            font-size: 25px;
+            color: #ffffff;
+            font-weight: 700;
+            display: none;
+        }
+
+        #sec1 {
+            background: rgb(41, 161, 156);
+            padding: 30px 0;
+        }
+
+        #sec1 .row {
+            display: flex;
+        }
+
+        #sec1.row.col {
+            width: 50%;
+        }
+
+        .sec-h1 {
+            font-size: 125px;
+            letter-spacing: 5px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Grand Hotel";
+            padding: 20px;
+            /* border: 2px solid; */
+        }
+
+        .btn-sec1 {
+            font-size: 33px;
+            color: #ffffff;
+            font-weight: 700;
+            background: rgb(34, 40, 49);
+            padding: 10px 30px;
+            border-radius: 20px;
+            border: none;
+            /* margin: 30px; */
+            font-family: "Montserrat";
+            margin-top: 20px;
+        }
+
+        .img-sec1 {
+            width: 100%;
+            margin: 0 auto;
+            /* border: 2px solid; */
+            text-align: right;
+        }
+
+        .sec-1-p {
+            font-size: 24px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+            margin: 20px;
+            text-align: right;
+        }
+
+        #sec-2 {
+            background: rgb(34, 40, 49);
+            padding: 30px 0;
+        }
+
+        #sec-2 .row {
+            display: flex;
+        }
+
+        #sec-2 .row .col {
+            /* border: 2px solid; */
+            width: 50%;
+        }
+
+        .sec2-img {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .sec2-p {
+            font-size: 23px;
+            letter-spacing: 1px;
+            color: #ffffff;
+            font-weight: 400;
+            padding: 10px 0;
+        }
+
+        .sec2-h1 {
+            font-size: 125px;
+            letter-spacing: 5px;
+            color: #ffffff;
+            font-weight: 400;
+            text-align: right;
+            margin-bottom: 5%;
+            margin-top: 20%;
+        }
+
+        .sec2-btn {
+            background: rgb(41, 161, 156);
+            border: none;
+            border-radius: 20px;
+            margin-left: 60%;
+            font-weight: 700;
+            padding: 10px 20px;
+            font-size: 33px;
+            color: white;
+        }
+
+        #sec3 {
+            background: rgb(41, 161, 156);
+            padding: 30px 0;
+
+        }
+
+        #sec3 .row {
+            display: flex;
+        }
+
+        #sec3 .row .col {
+            width: 50%;
+        }
+
+        .btn-nw {
+            background: rgb(34, 40, 49);
+            border-radius: 20px;
+            border: none;
+            padding: 10px 30px;
+            font-size: 30px;
+            color: white;
+        }
+
+        .img {
+            margin: 50px 50px;
+            border: 2px solid;
+
+        }
+        .sec3-p{
+            m
+            
+        }
+    </style>
 </head>
 
 <body>
-    <div class="nav">
-        <div class="left">
-            <div class="logo">
-                <h1>Skuda</h1>
-
-                <ul class="iteam">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Work</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Help</a></li>
+    <header id="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-a" href="">Home</a></li>
+                    <li class="nav-item"><a class="nav-a" href="">About</a></li>
+                    <li class="nav-item"><a class="nav-a" href="">Menu</a></li>
+                    <li class="nav-item"><a class="nav-a" href="">Blog</a></li>
+                    <li class="nav-item"><a class="nav-a" href="">Shop</a></li>
+                    <li class="nav-item"><a class="nav-a" href="">Contact</a></li>
                 </ul>
+                <div class="icon">
+                    <i class="fa-solid fa-bars bar" style="color: white;"></i>
+                </div>
+                <div class="logo">
+                    <img src="/task/CSS/Logo.png" alt="">
+                </div>
+            </nav>
+            <div class="header-content">
+                <h1 class="header-h1">coffee time</h1>
+                <h3 class="header-h3">YOUR HEADLINE</h3>
+                <p class="header-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit,. Magnam ratione qui
+                    suscipit vero deserunt .</p>
             </div>
-            <div class="icon">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin"></i>
-            </div>
-            <div class="details">
-                <p>design this template by <br> <span>Tirth Acharya</span></p>
-            </div>
+            <button class="btn-header">Order Now</button>
         </div>
-        <div class="right">
-            <div class="box">
-                <h4>Solution</h4>
-                <p>
-                    Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    officia deserunt mollit anim.
-                </p>
-                <p>
-                    Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    officia deserunt mollit anim.</p>
+
+        </div>
+    </header>
+    <div id="sec1">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="sec-h1">black coffee</h1>
+                    <button class="btn-sec1">order now</button>
+
+                </div>
+                <div class="col">
+                    <div class="img-sec1">
+                        <img src="/task/CSS/Image (1).png" alt="">
+                    </div>
+                    <p class="sec-1-p">Lorem ipsum dolor sit amet, consectetur adipis
+                        cing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation </p>
+                </div>
             </div>
         </div>
     </div>
+    <div id="sec-2">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="sec2-img">
+                        <img src="/task/CSS/img2.png" alt="">
+                    </div>
+                    <p class="sec2-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis laudantium labore,
+                        obcaecati placeat provident illum neque ratione itaque porro veniam, velit eius suscipit
+                        maiores. Vel?</p>
+                </div>
+                <div class="col">
+                    <h1 class="sec2-h1">Hot
+                        Coffees</h1>
+                    <button class="sec2-btn">Order Now</button>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <section class="section">
-        <div class="left2">
-
-        </div>
-        <div class="right2">
-            <div class="box1">
-                <i class="fas fa-balance-scale"></i>
-                <h2>About as</h2>
-                <p>Some things to talk about are: how seriously do you treat your dreams, the current dreams you have,
-                    dreams you had as a kid and how your view on them changed over the years.</p>
-                <p>Usually the best way to start a conversation is to talk about your current situation. The questions
-                    you’ll ask vary greatly on where you are and what you are doing.</p>
-            </div>
-            <div class="box2">
-                <i class="fas fa-building"></i>
-                <h2>Company Profile</h2>
-                <p> These can be great “gey about, but they can also get very pershese fo to talk about, but they can
-                    also get very personal. So you might want to save most of these for when you know a person a little
-                    bit better. </p>
-                <p>Some things to talk about are: how seriously do you treat your dreams, the current dreams you have,
-                    dreams you had as a kid and how your view on them changed over the years.</p>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="team">
-            <div class="left3">
-
-            </div>
-
-            <div class="name">
-                <h1>Our Work</h1>
-                <div class="work">
-
-                    <div class="img-item">
-                        <img src="https://images.pexels.com/photos/17532029/pexels-photo-17532029/free-photo-of-take-a-walk-to-the-beautiful-karang-tawulan-beach-in-west-java-indonesia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="">
+    <div id="sec3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="sec-h1">
+                        White
+                        Coffees
+                    </h1>
+                    <button class="btn-nw">order now</button>
+                </div>
+                <div class="col">
+                    <div class="img">
+                        <img src="/task/CSS/img3.png" alt="">
                     </div>
-                    <div class="img-item">
-                        <img src="https://images.pexels.com/photos/32261697/pexels-photo-32261697/free-photo-of-underwater-close-up-of-gray-fish-in-stredocesky-kraj.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="">
-                    </div>
-                    <div class="img-item">
-                        <img src="https://images.pexels.com/photos/32204933/pexels-photo-32204933/free-photo-of-serene-lakeside-boats-in-early-morning-light.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="">
-                    </div>
-                    <div class="img-item">
-                        <img src="https://images.pexels.com/photos/32204933/pexels-photo-32204933/free-photo-of-serene-lakeside-boats-in-early-morning-light.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="">
-                    </div>
+ <p class="sec3-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit voluptas
+                        amet doloribus voluptatibus exercitationem repellat repellendus soluta aspernatur ab aperiam.
+                    </p>
                 </div>
+                <!-- <div class="col"> -->
+                   
+                <!-- </div> -->
+                <!-- <p class="sec3-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit voluptas amet doloribus voluptatibus exercitationem repellat repellendus soluta aspernatur ab aperiam.</p> -->
             </div>
         </div>
-    </section>
-
-    <section class="member">
-        <div class="left3">
-
-        </div>
-        <div class="info">
-            <h1>our clients</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, unde voluptates reiciendis beatae harum
-                numquam? Temporibus maiores facilis sunt consequatur placeat similique ullam. Blanditiis, soluta!
-                Reprehenderit quos autem natus consequatur.</p>
-            <div class="clients">
-                <div class="cients-details"><img
-                        src="https://vectorseek.com/wp-content/uploads/2023/04/Wipro-Logo-Vector-730x730.jpg" alt="">
-                </div>
-                <div class="cients-details"><img
-                        src="https://tse4.mm.bing.net/th/id/OIP.iz0l2PLYQDTZgy32ELt1UAHaEa?rs=1&pid=ImgDetMain" alt="">
-                </div>
-                <div class="cients-details"><img
-                        src="https://tse2.mm.bing.net/th/id/OIP.R6IzPA5I9YTZWS43HFdi3wHaD4?rs=1&pid=ImgDetMain" alt="">
-                </div>
-                <div class="cients-details"><img
-                        src="https://th.bing.com/th/id/OIP.q147_8-0-KUzdNrCSjVNvQHaHa?rs=1&pid=ImgDetMain" alt=""></div>
-                <div class="cients-details"><img
-                        src="https://tse4.mm.bing.net/th/id/OIP.wotIbC9UUsmjxQ_0sPTcIwHaD5?rs=1&pid=ImgDetMain" alt="">
-                </div>
-                <div class="cients-details"><img
-                        src="https://www.muvi.com/wp-content/uploads/2020/01/1578427364-Grabyo-Logo.jpg" alt=""></div>
-                <div class="cients-details"><img
-                        src="https://tse4.mm.bing.net/th/id/OIP.rYlWGfzVHTAwqCPYdgiA3QHaE8?rs=1&pid=ImgDetMain" alt="">
-                </div>
-                <div class="cients-details"><img
-                        src="https://tse4.mm.bing.net/th/id/OIP.ljWWLwP0KiZWfC_naP0v2QHaEK?rs=1&pid=ImgDetMain" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-last">
-        <div class="left3">
-
-        </div>
-        <div class="right4">
-            <div class="boxa">
-                <h1>Talk to Us</h1>
-                <p>Lorem ipsum dolor sit ure odit blanditiis? Voluptas debitis, voluptate ab animi tempora iure facilis
-                    aspernatur.</p>
-                <p>Lorem ipsum dolor, sit amet consecteturnumquam modi aliquam officia eos porro commodi, vitae
-                    reiciendis iusto pariatur veniam voluptatum quisquam nostrum. Excepturi magnam in illo!</p>
-            </div>
-            <div class="boxb">
-                <form action="">
-                    <div class="form-item"><input type="text" placeholder="Your Name"></div>
-                    <div class="form-item"><input type="email" placeholder="Your Email"></div>
-                    <div class="form-item"><textarea placeholder="message"></textarea></div>
-                    <div class="form-btn"><input type="submit" value="Send"></div>
-                </form>
-            </div>
-        </div>
-    </section>
 </body>
 
 </html>

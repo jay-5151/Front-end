@@ -1,297 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Coffes-Time</title>
-    <link rel="stylesheet" href="/coffes time/css/style.css">
-    <link rel="stylesheet" href="/coffes time/css/media.css">
-      * {
-      margin: 0px;
-  }
-
-  .nav {
-      width: 100%;
-      height: 500px;
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/5077047/pexels-photo-5077047.jpeg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-  }
-
-  .left {
-      width: 20%;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-  }
-
-  .logo h1{
-      text-align: center;
-      margin: 15px 0px;
-  }
-  .icon{
-     margin-top: 40%;
-    text-align: center;
-  }
-  .details p{
-    font-size: 18px;
-    text-align: center;
-    margin: 10px;
-    letter-spacing: 2px;
-    text-shadow: 2px 3px 5px rgb(228, 7, 7);
-  }
-  .icon .fa-brands{
-    background-color: #ffffff;
-    color: rgb(19, 17, 117);
-    font-size: 20px;
-    padding: 8px;
-    margin: 0px 7px;
-   
-  }
-  .iteam {
-      margin: 0px;
-  }
-
-  ul {
-      text-align: center;
-      /* margin: 0%; */
-      padding: 0;
-      list-style: none;
-
-  }
-
-  ul li {
-
-      margin-top: 23px;
-      /* background-color: blue; */
-  }
-
-  ul li a {
-      text-decoration: none;
-      color: #ffffff;
-  }
-
-  .right {
-      width: 80%;
-  }
-
-  .box {
-      width: 350px;
-      /* height: 200px; */
-      transform: translate(100%,90%);
-      margin-left: 250px;
-      margin-top: 10px;
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 5px 15px;
-      border-radius: 5px;
-      box-shadow: 5px 4px 5px rgb(54, 41, 41);
-  }
-  .box h4{
-    font-size: 24px;
-    margin: 10px 5px;
-  }
-  .box p{
-    margin: 10px 5px;
-  }
-  .section {
-      display: flex;
-  }
-
-  .left2 {
-      width: 20%;
-      background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  .right2 {
-      width: 80%;
-      display: flex;
-      background-color: rgb(255, 255, 255);
-      gap: 5px;
-  }
-
-  .box1 {
-      width: 35%;
-      padding: 20px 50px;
-  }
-
-  .box1 i {
-      font-size: 60px;
-      color: rgb(12, 0, 123);
-  }
-
-  .box1 h2 {
-      margin: 20px 0px;
-  }
-
-  .box1 p {
-      margin: 20px 0px;
-  }
-
-  .box2 {
-      width: 35%;
-      padding: 20px 50px;
-  }
-
-  .box2 i {
-      font-size: 60px;
-      color: rgb(12, 0, 123);
-  }
-
-  .box2 h2 {
-      margin: 20px 0px;
-  }
-
-  .box2 p {
-      margin: 20px 0px;
-  }
-
-  .team {
-      width: 100%;
-      display: flex;
-  }
-
-  .left3 {
-      /* height: 200px; */
-      width: 20%;
-      background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  .name {
-      width: 70%;
-      border: 1px solid;
-      padding: 25px 15px;
-      margin-left: 15px;
-  }
-  .name h1{
-    margin-left: 90px;
-    font-size: 30px;
-    color: rgb(0, 0, 193);
-  }
-  .work {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-      gap: 10px;
-      padding-bottom: 30px;
-
-  }
-
-  .img-item {
-      width: 20%;
-      margin-top: 15px;
-  }
-
-  img {
-      width: 100%;
-      height: 250px;
-      background-repeat: no-repeat;
-      background-size: cover;
-  }
-  
-  .member{
-    display: flex;
-  }
-  .info{
-    width: 70%;
-    padding: 10px 50px;
-  }
-   .info h1{
-    font-size: 38px;
-    padding: 10px 0px;
-   }
-   .info p{
-    width: 80%;
-    margin: 10px 0px;
-    font-size: 18px;
-   }
-  .clients{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    width: 100%;
-    margin-top: 30px;
-    /* margin: 10px 0px; */
-  }
-  .cients-details{
-    width: 20%;
-    /* border: 2px solid; */
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 1px 2px 15px rgb(56, 48, 48);
-  }
-  .cients-details img{
-    width: 140px;
-    height: 100px;
-  }
-
-  .section-last{
-    display: flex;
-  }
-  .right4{
-    display: flex;
-    width: 80%;
-    margin-top: 20px;
-  }
-  .boxa{
-    width: 40%;
-    /* padding: 10px 30px; */
-    padding-left: 40px;
-    padding-top: 10px;
-  }
-  .boxa h1{
-    font-size: 30px;
-    margin-top: 35px;
-  }
-  .boxa p{
-    margin-top: 15px;
-  }
-  .boxb{
-    width: 40%;
-  }
-  .boxb form{
-    margin-top: 55px;
-  }
-  .form-item{
-    margin: 20px 100px;
-  }
-  .form-item input{
-     width: 80%;
-    border: none;
-     font-size: 17px;
-     padding: 5px 20px;
-    border-bottom: 2px solid;
-  }
-  .form-item textarea{
-     width: 60%;
-    border: none;
-     font-size: 17px;
-     padding: 5px 20px;
-    border-bottom: 2px solid;
-  }
-  .form-btn input{
-    padding: 10px 20px;
-    font-size: 10px;
-    margin-left: 65%;
-    border: none;
-    margin-bottom: 15px;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffes-Time</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Grand+Hotel&family=Manufacturing+Consent&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Playwrite+VN:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Underdog&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-    <header id="header">
-        <div class="container">
-         <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-1"><a class="alfa" href="">Home</a></li>
-                <li class="nav-1"><a class="alfa" href="">About</a></li>
-                <li class="nav-1"><a class="alfa" href=""> Menu</a></li>
-                <li class="nav-1"><a class="alfa" href="">Blog</a></li>
-                <li class="nav-1"><a  class="alfa" href="">Shop</a></li>
-                <li class="nav-1"><a  class="alfa" href="">Contact</a></li>
-            </ul>
-         </nav>
-         
-    </header>
+
+  <!-- header start -->
+  <header id="header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-a" href="">Home</a></li>
+          <li class="nav-item"><a class="nav-a" href="">About</a></li>
+          <li class="nav-item"><a class="nav-a" href="">Menu</a></li>
+          <li class="nav-item"><a class="nav-a" href="">Blog</a></li>
+          <li class="nav-item"><a class="nav-a" href="">Shop</a></li>
+          <li class="nav-item"><a class="nav-a" href="">Contact</a></li>
+        </ul>
+        <div class="icon">
+          <i class="fa-solid fa-bars bar"></i>
+        </div>
+        <div class="logo">
+          <img src="/image/Logo.png" alt="">
+        </div>
+    
+      </nav>
+      <div class="header-content">
+        <h1 class="header-h1">Coffee Time</h1>
+        <h3 class="header-h3">YOUR HEADLINE</h3>
+        <p class="header-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.
+        </p>
+        
+        <button class="btn-header">Order now</button>
+      </div>
+    </div>
+    <!-- <div class="img">
+        <img src="/image/Image.png" alt="">
+    </div> -->
+  </header>
+  <!-- header end -->
+
+
+  <div id="sec1">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="sec1-h1">Black Coffees</h1>
+          <button class="btn-sec1">Order now</button>
+        </div>
+        <div class="col">
+          <div class="img-sec1">
+            <img src="/image/Image (1).png" height="100%" width="100%" alt="">
+          </div>
+          <p class="sec1-p">Lorem ipsum dolor sit amet, consectetur adipis
+            cing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="sec2">
+    <div class="container">
+      <div class="row">
+
+        <div class="col">
+          <div class="img-sec1">
+            <img src="/image/img2.png" height="100%" width="100%" alt="">
+          </div>
+          <p class="sec1-p sec2-p">Lorem ipsum dolor sit amet, consectetur adipis
+            cing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation </p>
+        </div>
+        <div class="col">
+          <h1 class="sec1-h1">Hot Coffees</h1>
+          <button class="sec2-btn btn-sec1">Order now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="review">
+    <div class="container">
+      <h1 class="review-h1">Customer Reviews</h1>
+      <div class="row">
+        <div class="col">
+          <div class="card-img">
+            <img src="/image/img3.png" height="100%" width="100%" alt="">
+          </div>
+          <h3 class="review-h3">John Peter</h3>
+          <p class="review-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+        <div class="col">
+          <div class="card-img">
+            <img src="/image/img3.png" height="100%" width="100%" alt="">
+          </div>
+          <h3 class="review-h3">Ella Thomson</h3>
+          <p class="review-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <h4 class="footer-h4">Title Here</h4>
+          <p class="footer-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id
+            maximus ex. Etiam nec dignissim elit, at dignissim enim.</p>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <div class="col">
+              <h4 class="footer-h4">About</h4>
+              <ul class="footer-ul">
+                <li class="footer-li"><a href="" class="footer-a">History</a></li>
+                <li class="footer-li"><a href="" class="footer-a">Our Team</a></li>
+                <li class="footer-li"><a href="" class="footer-a">Brand Guidelines</a></li>
+                <li class="footer-li"><a href="" class="footer-a">Terms & Condition</a></li>
+                <li class="footer-li"><a href="" class="footer-a">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4 class="footer-h4">Services</h4>
+              <ul class="footer-ul">
+                <li class="footer-li"><a href="" class="footer-a">How to Order</a></li>
+                <li class="footer-li"><a href="" class="footer-a">Our Product</a></li>
+                <li class="footer-li"><a href="" class="footer-a">Order Status</a></li>
+                <li class="footer-li"><a href="" class="footer-a">Promo</a></li>
+                <li class="footer-li"><a href="" class="footer-a">Payment Method</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4 class="footer-h4">Other</h4>
+              <ul class="footer-ul">
+                <li class="footer-li"><a href="" class="footer-a">Contact Us</a></li>
+                <li class="footer-li"><a href="" class="footer-a">Help</a></li>
+                <li class="footer-li"><a href="" class="footer-a">Privacy</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
+
 </html>
