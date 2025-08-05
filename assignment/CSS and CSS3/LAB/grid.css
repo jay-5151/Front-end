@@ -1,0 +1,13 @@
+@media only screen and (max-width:768px){
+    #sec{
+        flex-direction: column;
+        align-items: center;
+    }
+    #sec .sidebar{
+        width: 100%;
+    }
+    #sec .main{
+        width: 100%;
+        text-align: center;
+    }
+}
