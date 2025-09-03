@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 300px;
+            width: 400px;
+            margin: 100px auto;
+            background: url(https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?_gl=1*w6as66*_ga*NDA2ODcxMDA4LjE3NTA3NTE1MzA.*_ga_8JE65Q40S6*czE3NTE1MzkwNDEkbzE2JGcxJHQxNzUxNTM5MDk5JGoyJGwwJGgw);
+            background-size: 100% 100%;
+            position: relative;
+
+        }
+
+        .left {
+            height: 300px;
+            width: 400px;
+            background-color: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 100%;
+            right: 100%;
+
+        }
+
+        .right {
+            height: 300px;
+            width: 400px;
+            background-color: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            bottom: 100%;
+            left: 100%;
+        }
+
+        .main:hover .left {
+            position: absolute;
+            top: 0%;
+            right: 0%;
+        }
+
+        .main:hover .right {
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left"> </div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>

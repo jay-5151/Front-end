@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 250px;
+            width: 200px;
+            border: 3px solid;
+            background-color: rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
+            transform: rotateY(0deg);
+            transition: 1s;
+            cursor: pointer;
+        }
+
+        .img {
+            height: 250px;
+            width: 200px;
+            background: url(https://images.pexels.com/photos/32908779/pexels-photo-32908779.jpeg?_gl=1*12b73gh*_ga*NDA2ODcxMDA4LjE3NTA3NTE1MzA.*_ga_8JE65Q40S6*czE3NTIwNDAzODgkbzIzJGcxJHQxNzUyMDQwMzkyJGo1NiRsMCRoMA..);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transform: rotateY(0deg);
+            transition: 1s;
+            cursor: pointer;
+        }
+
+        .img:hover {
+            transform: rotateY(180deg);
+        }
+
+        .main:hover {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="img"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.main {
+    background: lightgreen;
+    width: 600px;
+    height: 600px;
+    border: 2px solid;
+    /* text-align: center; */
+}
+
+.h1 {
+    text-align: center;
+}
+
+.p {
+    text-align: center;
+}
+
+.row {
+    padding: 30px 20px;
+}
+
+.pop {
+    text-align: center;
+    padding: 30px;
+
+}
+
+.sub {
+    padding: 10px 30px;
+    background: lightyellow;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+     transition: .3s;
+}
+.pop:hover .sub{
+    scale: 1.4;
+}
+

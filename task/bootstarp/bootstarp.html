@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Booking Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    label { display: block; margin: 10px 0 5px; }
+    select, input { padding: 5px; width: 250px; }
+    #form-container { margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+<h2>Restaurant Booking Form</h2>
+<div id="form-container"></div>
+
+<script>
+  // Create Form
+  const form = document.createElement("form");
+
+  // Username
+  let lblName = document.createElement("label");
+  lblName.textContent = "User Name:";
+  let inpName = document.createElement("input");
+  inpName.type = "text";
+  inpName.name = "username";
+  form.appendChild(lblName);
+  form.appendChild(inpName);
+
+  // Mobile
+  let lblMobile = document.createElement("label");
+  lblMobile.textContent = "Mobile Number:";
+  let inpMobile = document.createElement("input");
+  inpMobile.type = "tel";
+  inpMobile.name = "mobile";
+  form.appendChild(lblMobile);
+  form.appendChild(inpMobile);
+
+  // Email
+  let lblEmail = document.createElement("label");
+  lblEmail.textContent = "Email:";
+  let inpEmail = document.createElement("input");
+  inpEmail.type = "email";
+  inpEmail.name = "email";
+  form.appendChild(lblEmail);
+  form.appendChild(inpEmail);
+
+  // Number of persons
+  let lblPerson = document.createElement("label");
+  lblPerson.textContent = "No of Persons:";
+  let inpPerson = document.createElement("input");
+  inpPerson.type = "number";
+  inpPerson.name = "persons";
+  form.appendChild(lblPerson);
+  form.appendChild(inpPerson);
+
+  // Choice of booking
+  let lblChoice = document.createElement("label");
+  lblChoice.textContent = "Choice of Booking:";
+  let selectChoice = document.createElement("select");
+  selectChoice.name = "choice";
+  let options = ["Select", "Full day booking", "Half day booking", "Hourly booking"];
+  options.forEach(opt => {
+    let option = document.createElement("option");
+    option.value = opt;
+    option.textContent = opt;
+    selectChoice.appendChild(option);
+  });
+  form.appendChild(lblChoice);
+  form.appendChild(selectChoice);
+
+  // Dynamic Fields Section
+  let dynamicDiv = document.createElement("div");
+  form.appendChild(dynamicDiv);
+
+  // Handle booking choice
+  selectChoice.addEventListener("change", function () {
+    dynamicDiv.innerHTML = ""; // reset
+    
+    if (this.value === "Full day booking") {
+      // Only Date
+      let lblDate = document.createElement("label");
+      lblDate.textContent = "Date:";
+      let inpDate = document.createElement("input");
+      inpDate.type = "date";
+      dynamicDiv.appendChild(lblDate);
+      dynamicDiv.appendChild(inpDate);
+    }
+    else if (this.value === "Half day booking") {
+      // Date + Slot
+      let lblDate = document.createElement("label");
+      lblDate.textContent = "Date:";
+      let inpDate = document.createElement("input");
+      inpDate.type = "date";
+      dynamicDiv.appendChild(lblDate);
+      dynamicDiv.appendChild(inpDate);
+
+      let lblSlot = document.createElement("label");
+      lblSlot.textContent = "Slot:";
+      let selectSlot = document.createElement("select");
+      ["Breakfast", "Lunch", "Dinner"].forEach(s => {
+        let opt = document.createElement("option");
+        opt.value = s;
+        opt.textContent = s;
+        selectSlot.appendChild(opt);
+      });
+      dynamicDiv.appendChild(lblSlot);
+      dynamicDiv.appendChild(selectSlot);
+    }
+    else if (this.value === "Hourly booking") {
+      // Date + Time
+      let lblDate = document.createElement("label");
+      lblDate.textContent = "Date:";
+      let inpDate = document.createElement("input");
+      inpDate.type = "date";
+      dynamicDiv.appendChild(lblDate);
+      dynamicDiv.appendChild(inpDate);
+
+      let lblTime = document.createElement("label");
+      lblTime.textContent = "Time:";
+      let inpTime = document.createElement("input");
+      inpTime.type = "time";
+      dynamicDiv.appendChild(lblTime);
+      dynamicDiv.appendChild(inpTime);
+    }
+  });
+
+  // Submit button
+  let btn = document.createElement("button");
+  btn.type = "submit";
+  btn.textContent = "Book Now";
+  form.appendChild(btn);
+
+  document.getElementById("form-container").appendChild(form);
+</script>
+
+</body>
+</html>
