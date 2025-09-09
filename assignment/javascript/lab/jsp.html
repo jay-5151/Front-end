@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- callback:outer function call inner function -->
+    <script>
+        class a {
+            data() {
+                console.log("class of a")
+            }
+        }
+        class b extends a {
+            data() {
+                console.log("class of b")
+            }
+        }
+        class c extends b {
+            data() {
+                console.log("class of c")
+            }
+        }
+        let data1 = [new a, new b, new c]
+        console.log(data1)
+        for (let arr of data1) {
+            arr.data()
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- javscript inbuilt fetch -->
+    <!-- GET :- view data
+          Post :- New Data
+          Put/patch :- Update 
+          delete :- Remove 
+     -->
+
+    <!-- syntax
+     
+     fetch("url",{method:"GET"})
+     .then(convert)
+     .then(print)
+     .cathc(error)
+     -->
+
+
+
+    <button onclick="showMessage()">Clicke me</button>
+    <h1 id="message"></h1>
+    <script>
+
+
+
+        function showMessage() {
+            // console.log(fetch())
+            fetch("dnd.txt", {
+                method: "GET"
+            })
+                // convert
+                .then((res) => {
+                    return res.text()
+                    // console.log(res)
+                })
+                .then((res) => {
+                    console.log(res)
+                    // document.writeln(res)
+                    // document.getElementById(res)
+                    document.getElementById("message").textContent = res;
+                })
+        }
+    </script>
+</body>
+
+</html>

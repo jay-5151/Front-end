@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="asknumber()">Task 3</button>
+    <h1 id="h1"></h1>
+    <p id="output"></p>
+    <script>
+        document.getElementById("h1").innerHTML = "Task-1"
+        for (x = 0; x <= 10; x++) {
+            document.write(x, "<br>")
+        }
+
+        document.write("<br>", "Task-2", "<br>")
+        let z = 1
+        while (z <= 20) {
+            if (z % 2 == 0)
+                document.write("Even number:", z, "<br>")
+            z++
+        }
+
+        function asknumber() {
+            let number;
+            do {
+                number = parseInt(prompt("Enter a numbergreater than 10;"))
+            } while (number <= 10 || isNAN(number))
+            document.getElementById("output").innerHTML = "You entered: " + number
+        }
+    </script>
+</body>
+
+</html>
