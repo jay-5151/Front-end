@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class x{
+            dofa(){
+                console.log("dofa loko hoy 6")
+            }
+        }
+        class y  extends x{
+            bhosdina(){
+                console.log("bhosdina loko hoy 6")
+            }
+        }
+        class z extends x{
+            chutiya(){
+                console.log("chutiya loko hoy 6")
+            }
+        }
+        const user = new z
+        console.log(user)
+         user.dofa()
+         user.chutiya()
+
+         const user2 = new y
+         console.log(user2)
+         user2.dofa()
+         user2.bhosdina()
+    </script>
+</body>
+</html>
