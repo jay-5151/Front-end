@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        fetch("data1.json", {
+            method: "GET"
+        })
+            .then((res) => {
+                return res.json()
+            })
+            .then((res) => {
+                console.log(res)
+
+                for (const data of res.admin) {
+                    console.log(data.id)
+                    document.write(`<h3>id :${data.id} name: ${data.name} email:${data.email}</h3>`)
+                }
+                for (const data of res.users) {
+                    console.log(data.id)
+                    document.write(`<h3>id :${data.id} name: ${data.name} course:${data.course}</h3>`)
+                }
+            })
+
+
+    </script>
+</body>
+
+</html>

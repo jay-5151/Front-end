@@ -8,46 +8,46 @@
 </head>
 
 <body>
-    <!-- javscript inbuilt fetch -->
-    <!-- GET :- view data
-          Post :- New Data
-          Put/patch :- Update 
-          delete :- Remove 
-     -->
+    <h1 id="h1"></h1>
+    <table border="5">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>firstName</th>
+                <th>lastName</th>
+                <th>age</th>
+                <th>gender</th>
+            </tr>
+        </thead>
+        <tbody class="ab">
 
-    <!-- syntax
-     
-     fetch("url",{method:"GET"})
-     .then(convert)
-     .then(print)
-     .cathc(error)
-     -->
-
-
-
-    <button onclick="showMessage()">Clicke me</button>
-    <h1 id="message"></h1>
+        </tbody>
+    </table>
     <script>
-
-
-
-        function showMessage() {
-            // console.log(fetch())
-            fetch("dnd.txt", {
-                method: "GET"
+        fetch("https://dummyjson.com/users", {
+            method: "GET"
+        })
+            .then((res) => {
+                return res.json()
             })
-                // convert
-                .then((res) => {
-                    return res.text()
-                    // console.log(res)
+            .then((res) => {
+                console.log(res)
+
+                let htmldata = res.users.map((data, index) => {
+                    return (
+                        `
+                    <tr>
+                        <td>${data.id}</td>
+                        <td>${data.firstName}</td>
+                        <td>${data.lastName}</td>
+                        <td>${data.age}</td>
+                        <td>${data.gender}</td>
+                        </tr>
+                    `
+                    )
                 })
-                .then((res) => {
-                    console.log(res)
-                    // document.writeln(res)
-                    // document.getElementById(res)
-                    document.getElementById("message").textContent = res;
-                })
-        }
+                document.querySelector(".ab").innerHTML += htmldata.join("")
+            })
     </script>
 </body>
 

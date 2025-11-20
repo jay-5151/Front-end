@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="5">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>category</th>
+                <th>price</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script>
+        fetch("https://dummyjson.com/products", {
+            method: "GET"
+        })
+            .then((res) => {
+                return res.json()
+            })
+            .then((res) => {
+                console.log(res)
+                let jsdata = res.products.map((data, index) => {
+                    return (`
+                   <tr>
+                    <td>${data.id}</td>
+                    <td>${data.title}</td>
+                    <td>${data.category}</td>
+                    <td>${data.price}</td>
+                    </tr>
+                   `)
+                })
+                document.querySelector("tbody").innerHTML += jsdata.join("")
+            })
+    </script>
+</body>
+
+</html>
