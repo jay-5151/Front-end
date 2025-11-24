@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Booking Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background: linear-gradient(135deg, #c7def4, #86c7f9);
+        font-family: "Segoe UI", sans-serif;
+        min-height: 100vh;
+        padding: 30px;
+      }
+
+      .form-wrapper {
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+        max-width: 900px;
+        margin: auto;
+        overflow: hidden;
+      }
+
+      .form-header {
+        background: linear-gradient(135deg, #0984e3, #74b9ff);
+        color: #fff;
+        text-align: center;
+        padding: 25px 20px;
+      }
+
+      .form-header h2 {
+        font-weight: 700;
+      }
+
+      .form-body {
+        padding: 30px;
+      }
+
+      .form-label {
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 5px;
+      }
+
+      .form-control,
+      textarea {
+        border-radius: 10px;
+        padding: 10px 15px;
+        border: 1px solid #ddd;
+        transition: 0.3s;
+      }
+
+      .form-control:focus {
+        border-color: #0984e3;
+        box-shadow: 0 0 6px rgba(9, 132, 227, 0.3);
+      }
+
+      .btn-custom {
+        background: linear-gradient(135deg, #0984e3, #74b9ff);
+        color: #fff;
+        font-weight: 600;
+        border-radius: 30px;
+        padding: 12px 25px;
+        border: none;
+        transition: 0.3s;
+      }
+
+      .btn-custom:hover {
+        background: linear-gradient(135deg, #74b9ff, #0984e3);
+        transform: scale(1.05);
+      }
+
+      .table-wrapper {
+        margin-top: 40px;
+        background: #fff;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-delete {
+        background: #e74c3c;
+        color: #fff;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .btn-delete:hover {
+        background: #c0392b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <!-- Header -->
+      <div class="form-header">
+        <h2><i class="fas fa-hotel"></i> Hotel Booking</h2>
+        <p>Fill in the details to confirm your stay</p>
+      </div>
+
+      <!-- Form -->
+      <div class="form-body">
+        <form id="bookingForm">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label"
+                ><i class="fas fa-user"></i> Full Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="Enter your full name"
+              />
+              <small class="text-danger" id="nameError"></small>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label"
+                ><i class="fas fa-phone"></i> Phone</label
+              >
+              <input
+                type="text"
+                id="phone"
+                class="form-control"
+                placeholder="Enter phone number"
+              />
+              <small class="text-danger" id="phoneError"></small>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label"
+                ><i class="fas fa-envelope"></i> Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter email"
+              />
+              <small class="text-danger" id="emailError"></small>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label"
+                ><i class="fas fa-id-card"></i> Aadhar</label
+              >
+              <input
+                type="text"
+                id="aadhar"
+                class="form-control"
+                placeholder="Enter 12-digit Aadhar"
+              />
+              <small class="text-danger" id="aadharError"></small>
+            </div>
+
+            <div class="col-md-12">
+              <label class="form-label"
+                ><i class="fas fa-map-marker-alt"></i> Address</label
+              >
+              <input
+                type="text"
+                id="address"
+                class="form-control"
+                placeholder="Enter your address"
+              />
+              <small class="text-danger" id="addressError"></small>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label"
+                ><i class="fas fa-calendar-check"></i> Check-In</label
+              >
+              <input type="date" id="checkin" class="form-control" />
+              <small class="text-danger" id="checkinError"></small>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label"
+                ><i class="fas fa-calendar-day"></i> Check-Out</label
+              >
+              <input type="date" id="checkout" class="form-control" />
+              <small class="text-danger" id="checkoutError"></small>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label"
+                ><i class="fas fa-users"></i> Adults</label
+              >
+              <input
+                type="number"
+                id="adults"
+                class="form-control"
+                min="1"
+                placeholder="No. of adults"
+              />
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label"
+                ><i class="fas fa-child"></i> Children</label
+              >
+              <input
+                type="number"
+                id="children"
+                class="form-control"
+                min="0"
+                placeholder="No. of children"
+              />
+            </div>
+
+            <div class="col-md-12">
+              <label class="form-label"
+                ><i class="fas fa-info-circle"></i> Purpose of Visit</label
+              >
+              <input
+                type="text"
+                id="purpose"
+                class="form-control"
+                placeholder="Business / Leisure"
+              />
+              <small class="text-danger" id="purposeError"></small>
+            </div>
+          </div>
+
+          <div class="text-center mt-4">
+            <button type="submit" class="btn btn-custom">
+              <i class="fas fa-paper-plane"></i> Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="table-wrapper">
+      <h4 class="mb-3"><i class="fas fa-list"></i> Booking Records</h4>
+      <table class="table table-bordered table-hover text-center">
+        <thead class="table-primary">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Aadhar</th>
+            <th>Check-In</th>
+            <th>Check-Out</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="records"></tbody>
+      </table>
+    </div>
+
+    <script>
+      const form = document.getElementById("bookingForm");
+      const recordsTable = document.getElementById("records");
+
+      // Load from localStorage
+      let bookings = JSON.parse(localStorage.getItem("bookings")) || [];
+      renderTable();
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Get values
+        let name = document.getElementById("name").value.trim();
+        let phone = document.getElementById("phone").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let aadhar = document.getElementById("aadhar").value.trim();
+        let address = document.getElementById("address").value.trim();
+        let checkin = document.getElementById("checkin").value;
+        let checkout = document.getElementById("checkout").value;
+        let adults = document.getElementById("adults").value;
+        let children = document.getElementById("children").value;
+        let purpose = document.getElementById("purpose").value.trim();
+
+        // Simple Validation
+        let valid = true;
+        document
+          .querySelectorAll("small.text-danger")
+          .forEach((el) => (el.textContent = ""));
+
+        if (!name) {
+          document.getElementById("nameError").textContent = "Name required";
+          valid = false;
+        }
+        if (!/^[6-9]\d{9}$/.test(phone)) {
+          document.getElementById("phoneError").textContent =
+            "Enter valid phone";
+          valid = false;
+        }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          document.getElementById("emailError").textContent =
+            "Enter valid email";
+          valid = false;
+        }
+        if (!/^\d{12}$/.test(aadhar)) {
+          document.getElementById("aadharError").textContent =
+            "Enter 12 digit Aadhar";
+          valid = false;
+        }
+        if (!address) {
+          document.getElementById("addressError").textContent =
+            "Address required";
+          valid = false;
+        }
+        if (!checkin) {
+          document.getElementById("checkinError").textContent =
+            "Check-in required";
+          valid = false;
+        }
+        if (!checkout) {
+          document.getElementById("checkoutError").textContent =
+            "Check-out required";
+          valid = false;
+        }
+        if (checkin && checkout && new Date(checkout) <= new Date(checkin)) {
+          document.getElementById("checkoutError").textContent =
+            "Check-out must be after check-in";
+          valid = false;
+        }
+        if (!purpose) {
+          document.getElementById("purposeError").textContent =
+            "Purpose required";
+          valid = false;
+        }
+
+        if (!valid) return;
+
+        // Save booking
+        let booking = {
+          id: Date.now(), // unique ID
+          name,
+          phone,
+          email,
+          aadhar,
+          checkin,
+          checkout,
+        };
+        bookings.push(booking);
+        localStorage.setItem("bookings", JSON.stringify(bookings));
+
+        renderTable();
+        form.reset();
+        alert("Booking Saved Successfully!");
+      });
+
+      function renderTable() {
+        recordsTable.innerHTML = "";
+        bookings.forEach((b, index) => {
+          let row = `<tr>
+          <td>${index + 1}</td>
+          <td>${b.name}</td>
+          <td>${b.phone}</td>
+          <td>${b.email}</td>
+          <td>${b.aadhar}</td>
+          <td>${b.checkin}</td>
+          <td>${b.checkout}</td>
+          <td><button class="btn-delete" onclick="deleteBooking(${
+            b.id
+          })"><i class="fas fa-trash"></i></button></td>
+        </tr>`;
+          recordsTable.innerHTML += row;
+        });
+      }
+
+      function deleteBooking(id) {
+        if (confirm("Are you sure you want to delete this booking?")) {
+          bookings = bookings.filter((b) => b.id !== id);
+          localStorage.setItem("bookings", JSON.stringify(bookings));
+          renderTable();
+        }
+      }
+    </script>
+  </body>
+</html>
