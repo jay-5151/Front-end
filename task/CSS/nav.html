@@ -1,51 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        ul li {
-            padding: 10px 20px;
-            background-color: red;
-            position: relative;
-            display: inline-block;
-
-        }
-
-        ul li::after {
-            content: "";
-            height: 3px;
-            width: 0px;
-            background: black;
-            position: absolute;
-            top: 100%;
-            left: 0px;
-            transition: 0.3s;
-        }
-
-        li:hover::after {
-            width: 100%;
-        }
-
-        ul li a {
-            text-decoration: none;
-            color: black;
-        }
-    </style>
 </head>
-
 <body>
-    <div class="main">
-        <ul>
-            <li><a href="">home</a></li>
-            <li><a href="">about</a></li>
-            <li><a href="">contact</a></li>
-            <li><a href="">help</a></li>
-        </ul>
-
-    </div>
+    <h2 id="h1"></h2>
+    <h2 id="nav"></h2>
+    <script>
+        let a=20;
+        let b=30;
+        
+        let sum=a+b
+        console.log("sum=>",sum)
+        document.write("sum=>",sum)
+        console.log("sum=>",a+b)
+        console.log("sum=>",a-b)
+        console.log("sum=>",a*b)
+        console.log("sum=>",a/b)
+        document.getElementById("h1").innerHTML="hello innertext method";
+        document.getElementById("nav").innerHTML="<i>hello wolrd</i>";
+    </script>
 </body>
-
 </html>

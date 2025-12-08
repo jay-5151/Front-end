@@ -1,139 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Restaurant Booking Form</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 20px; }
-    label { display: block; margin: 10px 0 5px; }
-    select, input { padding: 5px; width: 250px; }
-    #form-container { margin-top: 20px; }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+    />
 </head>
 <body>
 
-<h2>Restaurant Booking Form</h2>
-<div id="form-container"></div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyWebsite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<script>
-  // Create Form
-  const form = document.createElement("form");
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  // Username
-  let lblName = document.createElement("label");
-  lblName.textContent = "User Name:";
-  let inpName = document.createElement("input");
-  inpName.type = "text";
-  inpName.name = "username";
-  form.appendChild(lblName);
-  form.appendChild(inpName);
+    <!-- Hero Section -->
+    <section class="bg-primary text-white text-center p-5">
+        <h1>Welcome to My Bootstrap Website</h1>
+        <p>Beautiful • Responsive • Fast</p>
+        <a href="#" class="btn btn-light mt-3">Get Started</a>
+    </section>
 
-  // Mobile
-  let lblMobile = document.createElement("label");
-  lblMobile.textContent = "Mobile Number:";
-  let inpMobile = document.createElement("input");
-  inpMobile.type = "tel";
-  inpMobile.name = "mobile";
-  form.appendChild(lblMobile);
-  form.appendChild(inpMobile);
+    <!-- About Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">About Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-md-6">
+                <h3>Who We Are</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Integer posuere erat a ante venenatis dapibus.
+                </p>
+                <button class="btn btn-primary">Learn More</button>
+            </div>
+        </div>
+    </section>
 
-  // Email
-  let lblEmail = document.createElement("label");
-  lblEmail.textContent = "Email:";
-  let inpEmail = document.createElement("input");
-  inpEmail.type = "email";
-  inpEmail.name = "email";
-  form.appendChild(lblEmail);
-  form.appendChild(inpEmail);
+    <!-- Services Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card p-3 shadow">
+                        <h4>Web Design</h4>
+                        <p>Modern responsive websites with Bootstrap.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 shadow">
+                        <h4>Development</h4>
+                        <p>Custom-built web applications and dashboards.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 shadow">
+                        <h4>SEO Optimization</h4>
+                        <p>Rank higher on search engines with our SEO tools.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  // Number of persons
-  let lblPerson = document.createElement("label");
-  lblPerson.textContent = "No of Persons:";
-  let inpPerson = document.createElement("input");
-  inpPerson.type = "number";
-  inpPerson.name = "persons";
-  form.appendChild(lblPerson);
-  form.appendChild(inpPerson);
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2025 MyWebsite. All Rights Reserved.
+    </footer>
 
-  // Choice of booking
-  let lblChoice = document.createElement("label");
-  lblChoice.textContent = "Choice of Booking:";
-  let selectChoice = document.createElement("select");
-  selectChoice.name = "choice";
-  let options = ["Select", "Full day booking", "Half day booking", "Hourly booking"];
-  options.forEach(opt => {
-    let option = document.createElement("option");
-    option.value = opt;
-    option.textContent = opt;
-    selectChoice.appendChild(option);
-  });
-  form.appendChild(lblChoice);
-  form.appendChild(selectChoice);
-
-  // Dynamic Fields Section
-  let dynamicDiv = document.createElement("div");
-  form.appendChild(dynamicDiv);
-
-  // Handle booking choice
-  selectChoice.addEventListener("change", function () {
-    dynamicDiv.innerHTML = ""; // reset
-    
-    if (this.value === "Full day booking") {
-      // Only Date
-      let lblDate = document.createElement("label");
-      lblDate.textContent = "Date:";
-      let inpDate = document.createElement("input");
-      inpDate.type = "date";
-      dynamicDiv.appendChild(lblDate);
-      dynamicDiv.appendChild(inpDate);
-    }
-    else if (this.value === "Half day booking") {
-      // Date + Slot
-      let lblDate = document.createElement("label");
-      lblDate.textContent = "Date:";
-      let inpDate = document.createElement("input");
-      inpDate.type = "date";
-      dynamicDiv.appendChild(lblDate);
-      dynamicDiv.appendChild(inpDate);
-
-      let lblSlot = document.createElement("label");
-      lblSlot.textContent = "Slot:";
-      let selectSlot = document.createElement("select");
-      ["Breakfast", "Lunch", "Dinner"].forEach(s => {
-        let opt = document.createElement("option");
-        opt.value = s;
-        opt.textContent = s;
-        selectSlot.appendChild(opt);
-      });
-      dynamicDiv.appendChild(lblSlot);
-      dynamicDiv.appendChild(selectSlot);
-    }
-    else if (this.value === "Hourly booking") {
-      // Date + Time
-      let lblDate = document.createElement("label");
-      lblDate.textContent = "Date:";
-      let inpDate = document.createElement("input");
-      inpDate.type = "date";
-      dynamicDiv.appendChild(lblDate);
-      dynamicDiv.appendChild(inpDate);
-
-      let lblTime = document.createElement("label");
-      lblTime.textContent = "Time:";
-      let inpTime = document.createElement("input");
-      inpTime.type = "time";
-      dynamicDiv.appendChild(lblTime);
-      dynamicDiv.appendChild(inpTime);
-    }
-  });
-
-  // Submit button
-  let btn = document.createElement("button");
-  btn.type = "submit";
-  btn.textContent = "Book Now";
-  form.appendChild(btn);
-
-  document.getElementById("form-container").appendChild(form);
-</script>
-
+    <!-- Bootstrap JS -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
 </body>
 </html>
