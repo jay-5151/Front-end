@@ -6,7 +6,7 @@ function About() {
   return (
     <div>
         <Header />
-        <h1 className='bg-info p-5'>hello this is about page</h1>
+        <h1 className='bg-primary'>hello Header Page</h1>
         <Footer />
     </div>
   )

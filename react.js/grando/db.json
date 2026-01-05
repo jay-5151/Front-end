@@ -1,0 +1,82 @@
+{
+  "rooms": [
+    {
+      "id": "1",
+      "name": "Deluxe Ocean Suite",
+      "guests": "5",
+      "price": "100",
+      "type": "Ocean View",
+      "img": "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?_gl=1*142nwcb*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NjU4Nzk4OTAkbzQ0JGcxJHQxNzY1ODc5ODk0JGo1NiRsMCRoMA.."
+    },
+    {
+      "id": "2",
+      "name": "Family Garden Room",
+      "guests": "7",
+      "price": "150",
+      "type": "Family Friendly",
+      "img": "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?_gl=1*gweiy*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NjU4Nzk4OTAkbzQ0JGcxJHQxNzY1ODc5ODk0JGo1NiRsMCRoMA.."
+    },
+    {
+      "id": "3",
+      "name": "Executive Bussiness Suite",
+      "guests": "4",
+      "price": "180",
+      "type": "Bussiness",
+      "img": "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?_gl=1*gweiy*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NjU4Nzk4OTAkbzQ0JGcxJHQxNzY1ODc5ODk0JGo1NiRsMCRoMA.."
+    },
+    {
+      "id": "1767277632447",
+      "name": "The Imperial New Delhi",
+      "guests": "3",
+      "price": "5000",
+      "type": "Imperial Room - Twin Bed with Bathtub",
+      "img": "https://r1imghtlak.mmtcdn.com/86242310066e11e8b086025f77df004f.jpg?&output-quality=75&crop=520:350;2,0&output-format=jpg&downsize=600:*"
+    },
+    {
+      "id": "1767328942428",
+      "name": "JW Marriott Mumbai Juhu",
+      "guests": "2",
+      "price": "50000",
+      "type": "Sunset Suite, Executive lounge access, 1 Bedroom Suite",
+      "img": "https://r1imghtlak.mmtcdn.com/74362decf97d11ea84ee0242ac110002.jpg?&output-quality=75&crop=520:350;8,0&output-format=jpg&downsize=600:*"
+    },
+    {
+      "id": "1767329290074",
+      "name": "The Taj Mahal Palace, Mumbai",
+      "guests": "3",
+      "price": "40000",
+      "type": "Luxury Grande City View Room",
+      "img": "https://r1imghtlak.mmtcdn.com/ce4d12dcc80011e99a7a0242ac110003.jpg?&output-quality=75&crop=520:350;2,0&output-format=jpg&downsize=600:*"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Yash",
+      "email": "yash@gmail.com",
+      "status": "unblock",
+      "password": "12345"
+    },
+    {
+      "id": "2",
+      "name": "Nirav",
+      "email": "nirav@gmail.com",
+      "status": "unblock",
+      "password": "123456"
+    },
+    {
+      "id": "3",
+      "name": "Surya",
+      "email": "surya@gmail.com",
+      "status": "unblock",
+      "password": "1234567"
+    },
+    {
+      "id": "1766771164058",
+      "name": "Yash",
+      "email": "yash@gmail.com",
+      "password": "12345",
+      "status": "unblock"
+    }
+  ]
+}

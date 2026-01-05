@@ -1,19 +1,17 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate,} from 'react-router-dom'
 
 function NotFound() {
-
-    const redirect = useNavigate()
-
-    const getdata=()=>{
-        redirect("/")
+    const jay=useNavigate()
+    const backto=()=>{
+        jay("/")
     }
-
   return (
     <div>
-      <h1 className='bg-danger text-light p-5'>Hello this 404 Not Found Pages</h1>
-      <Link to="/" className='btn btn-success'>Back to Home</Link>
-      <button onClick={getdata} className='btn btn-info'>Back to Home</button>
+        
+        <h1>hello this is 404 Not Found Page</h1>
+        <Link to="/" className="btn btn-primary">Back To Home </Link>
+        <button onClick={backto} className='btn mx-2 btn-info'>back to home page</button>
     </div>
   )
 }

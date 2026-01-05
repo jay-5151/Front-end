@@ -1,0 +1,48 @@
+{
+  "service": [
+    {
+      "id": "1",
+      "name": "Metal Works",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.",
+      "img": "https://tse4.mm.bing.net/th/id/OIP.7BCdQndVLyth5VJqJ7UnBQHaEH?rs=1&pid=ImgDetMain&o=7&rm=3"
+    },
+    {
+      "id": "2",
+      "name": "Steel welding",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.",
+      "img": "https://tse2.mm.bing.net/th/id/OIP.b2fJRELoq4h8VruFIP0L-AHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+    },
+    {
+      "id": "3",
+      "name": "pipe welding",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.",
+      "img": "https://tse3.mm.bing.net/th/id/OIP.lxrDKj5bOeUXDWD7LjSK2gHaEJ?rs=1&pid=ImgDetMain&o=7&rm=3"
+    },
+    {
+      "id": "1767335441236",
+      "name": "Solution Sprints",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+      "img": "https://tse3.mm.bing.net/th/id/OIP.ykMufSGVNeem4h4w0qnOrAHaCS?rs=1&pid=ImgDetMain&o=7&rm=3"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin1",
+      "email": "admin1@gmail.com",
+      "password": 1234
+    },
+    {
+      "id": "2",
+      "name": "admin2",
+      "email": "admin2@gmail.com",
+      "password": 123456
+    },
+    {
+      "id": "3",
+      "name": "admin3",
+      "email": "admin3@gmail.com",
+      "password": 12345678
+    }
+  ]
+}

@@ -6,7 +6,7 @@ function Contect() {
   return (
     <div>
         <Header/>
-        <h1 className='bg-primary p-5'>hello this is a contect page</h1>
+        <h1>hello this is contect page</h1> 
         <Footer/>
     </div>
   )
