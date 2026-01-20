@@ -1,0 +1,62 @@
+{
+  "technicians": [
+    {
+      "id": "1",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyIlo0ITqTk6LqFIRMqjIm_03JEeZSwinFxg&s",
+      "name": "jay vaghela",
+      "desc": "Designation"
+    },
+    {
+      "id": "2",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4d1jxGCjKExgORVnb9fdFcTYzgtsiXjIjFw&s",
+      "name": "yash gondaliya",
+      "desc": "contractor"
+    },
+    {
+      "id": "3",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtJ-1lBQ37ku5bCvubHww0X6Ctp1eZZZq_BQ&s",
+      "name": "nirav patel",
+      "desc": "Designation"
+    },
+    {
+      "id": "1768030627310",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgvys9ZNWkEISl3LJkzth42IyVAOm-oceLkw&s",
+      "name": "aman solanki",
+      "desc": "Designation"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin1",
+      "email": "admin@gmail.com",
+      "password": 123
+    },
+    {
+      "id": "2",
+      "name": "admin2",
+      "email": "admin2@gmail.com",
+      "password": 1234
+    },
+    {
+      "id": "3",
+      "name": "admin3",
+      "email": "admin3@gmail.com",
+      "password": 12345
+    }
+  ],
+  "users":[
+    {
+      "id": "1",
+      "name": "users",
+      "email": "users@gmail.com",
+      "password": 147
+     },
+     {
+      "id": "2",
+      "name": "users2",
+      "email": "users2@gmail.com",
+      "password": 258
+     }
+  ]
+}
