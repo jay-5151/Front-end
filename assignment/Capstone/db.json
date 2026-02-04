@@ -45,18 +45,41 @@
       "password": 12345
     }
   ],
-  "users":[
+  "users": [
     {
       "id": "1",
       "name": "users",
       "email": "users@gmail.com",
+      "status": "unblock",
       "password": 147
-     },
-     {
+    },
+    {
       "id": "2",
       "name": "users2",
       "email": "users2@gmail.com",
+      "status": "block",
       "password": 258
-     }
+    },
+    {
+      "id": "1768919184487",
+      "name": "roshani",
+      "email": "roshani12@gmaiil.com",
+      "password": "121",
+      "status": "unblock"
+    },
+    {
+      "id": "1768919253079",
+      "name": "roshani",
+      "email": "roshani12@gmaiil.com",
+      "password": "121",
+      "status": "unblock"
+    },
+    {
+      "id": "1769251841457",
+      "name": "jay vaghela",
+      "email": "jayv16121@gmail.com",
+      "password": "1234",
+      "status": "unblock"
+    }
   ]
 }

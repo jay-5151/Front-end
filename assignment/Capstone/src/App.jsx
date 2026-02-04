@@ -12,6 +12,8 @@ import Dashboard from './Admin/Apages/Dashboard'
 import Serviceadd from './Admin/Apages/Serviceadd'
 import Servicemange from './Admin/Apages/Servicemange'
 import Alogin from './Admin/Apages/Alogin'
+import Loginx from './Website/Pages/Loginx'
+import Register from './Website/Pages/Register'
 
 function App() {
   return (
@@ -26,6 +28,10 @@ function App() {
       <Route path='/testimonial' element={<Testimonial />} />
       <Route path='/notfound' element={<Notfound />} />
       <Route path='/contact' element={<Contact />} />
+      <Route path='/loginx' element={<Loginx />} />
+      <Route path='/register' element={<Register />} />
+      
+      
       {/* <admin></admin> */}
       <Route path='/dash' element={<Dashboard/>}/>
       <Route path='/serviceadd' element={<Serviceadd/>}/>

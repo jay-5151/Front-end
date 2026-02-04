@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 function Header() {
   return (
@@ -55,6 +55,13 @@ function Header() {
           </div>
         </div>
         <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
+        {(()=>{
+          if(localStorage.getItem("Uid")){
+            return(
+              <li><Link className='nav-item nav-link active'>{localStorage.getItem("Uname")}</Link></li>
+            )
+          }
+        })()}
       </div>
       <a href className="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get A Quote<i className="fa fa-arrow-right ms-3" /></a>
     </div>
