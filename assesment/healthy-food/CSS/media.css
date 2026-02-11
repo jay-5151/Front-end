@@ -1,0 +1,99 @@
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+  #header .header-nav .header-ul {
+    display: none;
+  }
+  #header .header-nav .icons {
+    display: block;
+  }
+  #card-section .row {
+    display: block;
+  }
+
+  #card-section .col {
+    width: 100%;
+    max-width: 50%;
+    margin: 15px auto;
+  }
+
+  #discount-section .row {
+    display: block;
+  }
+  #discount-section .col {
+    width: 100%;
+  }
+
+  #discount-section .right-part h1,
+  p,
+  .card-btn {
+    text-align: center;
+  }
+  #discount-section .right-part h1 {
+    margin: 0 auto;
+  }
+
+  #offer-section .row {
+    display: block;
+  }
+  #offer-section .col {
+    width: 100%;
+  }
+
+  .left-part {
+    padding-left: 0;
+  }
+
+  #offer-section .left-part p,
+  .card-btn {
+    /* width: 100%; */
+    margin: 0 auto;
+  }
+
+  #offer-section .left-part h1 {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #order-section .row {
+    display: block;
+  }
+  #order-section .col {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #footer .row {
+    display: block;
+  }
+
+  #footer .col4,
+  p {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #footer .col6 {
+    width: 100%;
+  }
+
+  #footer .col6 .col {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #waiter-section img {
+    width: 30px;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+}
